@@ -1,2 +1,2 @@
 # DesignPatterns
-Простые примеры использования шаблонов проектирования в Swift.
+Simple examples of using design patterns in Swift.
