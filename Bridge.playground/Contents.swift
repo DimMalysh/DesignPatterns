@@ -13,12 +13,6 @@ enum TypesOfAnimals {
 }
 
 class Carnivora {
-    /*let domain = Domains.eukaryotes
-    let kingdom = "Animals"
-    let type = TypesOfAnimals.chord
-    let animalClass = "Mammals"
-    let detachment = "Carnivora"*/
-    
     let kingdom : String = "Animals"
     let domain : Domains
     let type : TypesOfAnimals
@@ -50,14 +44,14 @@ class Walrus : Pinnipedia {
 //Bridge
 //*** abstraction
 protocol NewCarnivora {
-    var domain : Domains {get}
     var kingdom : String {get}
+    var domain : Domains {get}
     var type : TypesOfAnimals {get}
 }
 
 class NewFissipedia: NewCarnivora {
-    var domain : Domains
     var kingdom : String
+    var domain : Domains
     var type : TypesOfAnimals
     
     init(domain : Domains, kingdom : String, type : TypesOfAnimals) {
@@ -68,8 +62,8 @@ class NewFissipedia: NewCarnivora {
 }
 
 class NewPinnipedia: NewCarnivora {
-    var domain : Domains
     var kingdom : String
+    var domain : Domains
     var type : TypesOfAnimals
     
     init(domain : Domains, kingdom : String, type : TypesOfAnimals) {
