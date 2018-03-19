@@ -15,8 +15,8 @@ class DeliveryDepartment {
 class DiscountDepartment {
     func getDiscount(count: Int) -> Double {
         switch count {
-        case 1...3: return 0
-        case 4...10: return 10
+        case 1...2: return 0
+        case 3...5: return 10
         default: return 20
         }
     }
@@ -44,5 +44,5 @@ class SushiServices {
 
 let callCenter = SushiServices(discount: DiscountDepartment(), order: OrderDepartment(), delivery: DeliveryDepartment())
 
-let someClient = callCenter.getInfo(count:5, address: "KrivoyRog")
+let someClient = callCenter.getInfo(count:2, address: "KrivoyRog")
 let anotherClient = callCenter.getInfo(count:10, address: "Gluhomanovka")
