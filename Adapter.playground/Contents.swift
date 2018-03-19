@@ -1,4 +1,4 @@
-//Simple example to use the pattern Adapter for adapting european measure of length from american measure.
+// Simple example to use the pattern Adapter for adapting european measure of length from american measure.
 
 protocol MeasureOfLength {
     var kilometer: Double {get}
@@ -20,6 +20,7 @@ class AmericanMeasureOfLength {
     }
 }
 
+// Adapter
 class Adapter: MeasureOfLength {
     private let target: AmericanMeasureOfLength
     
