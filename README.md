@@ -1,2 +1,2 @@
 # DesignPatterns
-Simple examples of using design patterns in Swift.
+Simple examples of using some design patterns in Swift.
